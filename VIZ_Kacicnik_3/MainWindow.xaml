@@ -1,0 +1,33 @@
+﻿<Window x:Class="VIZ_Kacicnik_3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VIZ_Kacicnik_3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="btnNalozi" Content="Nalozi datoteko" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="110" Click="btnNalozi_Click"/>
+        <Button x:Name="btnShrani" Content="Shrani datoteko" HorizontalAlignment="Left" Margin="146,10,0,0" VerticalAlignment="Top" Width="110" Click="btnShrani_Click"/>
+        <ComboBox Name="Nalaganje" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" Width="110" Height="22">
+            <ComboBoxItem IsSelected="True">Nesifrirana</ComboBoxItem>
+            <ComboBoxItem Name="Sifrirana">Sifrirana</ComboBoxItem>
+        </ComboBox>
+        <Button x:Name="btnKljuc" Content="Kljuc" HorizontalAlignment="Left" Margin="280,10,0,0" VerticalAlignment="Top" Width="110" Click="btnKljuc_Click"/>
+        <ComboBox Name="Kljuc_Combo" HorizontalAlignment="Left" Margin="280,41,0,0" VerticalAlignment="Top" Width="110">
+            <ComboBoxItem IsSelected="True">Naloži</ComboBoxItem>
+            <ComboBoxItem >Shrani</ComboBoxItem>
+            <ComboBoxItem >Generiraj DES</ComboBoxItem>
+            <ComboBoxItem >Generiraj DES3</ComboBoxItem>
+        </ComboBox>
+        <ComboBox  Name="shranjevanje" HorizontalAlignment="Left" Margin="146,41,0,0" VerticalAlignment="Top" Width="110">
+            <ComboBoxItem IsSelected="True">Nesifrirana</ComboBoxItem>
+            <ComboBoxItem>Sifrirana</ComboBoxItem>
+        </ComboBox>
+        <Button x:Name="btnDESsif" Content="DES sifriranje" HorizontalAlignment="Left" Margin="10,94,0,0" VerticalAlignment="Top" Width="110" Click="btnDESsif_Click"/>
+        <Button x:Name="btnDESdesif" Content="DES desifriraj" HorizontalAlignment="Left" Margin="146,94,0,0" VerticalAlignment="Top" Width="110" Click="btnDESdesif_Click"/>
+        <Button x:Name="btnDES3sif" Content="DES3 sifriranje" HorizontalAlignment="Left" Margin="10,127,0,0" VerticalAlignment="Top" Width="110" Click="btnDES3sif_Click"/>
+        <Button x:Name="btnDES3desif" Content="DES3 desifriraj" HorizontalAlignment="Left" Margin="146,127,0,0" VerticalAlignment="Top" Width="110" Click="btnDES3desif_Click"/>
+
+    </Grid>
+</Window>
